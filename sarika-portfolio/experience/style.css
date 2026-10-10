@@ -1,0 +1,16 @@
+/* Reuse the homepage styles so both pages stay consistent. */
+@import url("../assets/css/style.css");
+
+/* Keep the standalone page below the fixed navigation. */
+.experience {
+  margin-top: 6.5rem;
+}
+
+.morebtn .btn i {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.morebtn .btn:hover i {
+  transform: translateX(-5px);
+}

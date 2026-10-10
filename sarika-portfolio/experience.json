@@ -1,0 +1,23 @@
+[
+  {
+    "id": "experience-java-training-2023",
+    "title": "Softpro India Pvt. Ltd., Lucknow",
+    "role": "Java Summer Trainee",
+    "period": "Summer 2023",
+    "description": "Completed summer training in Java."
+  },
+  {
+    "id": "experience-mern-internship",
+    "title": "MERN Stack Internship",
+    "role": "MERN Stack Intern",
+    "period": "Summer internship",
+    "description": "Completed a summer internship focused on MERN Stack development."
+  },
+  {
+    "id": "experience-trainx-2025",
+    "title": "TrainX Training Program",
+    "role": "Data Structures and Algorithms Trainee",
+    "period": "2025",
+    "description": "Gained hands-on DSA experience and solved multiple data-structure and algorithm problems."
+  }
+]

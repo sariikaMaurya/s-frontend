@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin login | Sarika Maurya's Portfolio</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="/admin/assets/admin.css">
+  <script src="/admin/assets/login.js" defer></script>
+</head>
+<body class="login-page">
+  <a class="brand login-brand" href="/"><span class="brand-mark">SM</span><span>Sarika<span class="brand-caption">PORTFOLIO ADMIN</span></span></a>
+  <main class="login-layout">
+    <section class="login-intro" aria-label="Portfolio administration">
+      <span class="eyebrow">YOUR SPACE, BEHIND THE SCENES</span>
+      <h1>A little space.<br>A bigger picture.</h1>
+      <p>Your projects, skills, and conversations.<br>All together in your portfolio dashboard.</p>
+      <div class="intro-rule"></div>
+      <span class="intro-note"><span class="status-dot"></span> Sarika Maurya / Personal portfolio</span>
+    </section>
+    <section class="login-card" aria-labelledby="login-heading">
+      <div class="lock-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></div>
+      <h2 id="login-heading">Welcome back</h2>
+      <p class="muted">Sign in to your admin dashboard.</p>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" placeholder="Enter your username" required maxlength="150" autofocus>
+        <label for="password">Password</label>
+        <div class="password-field">
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required maxlength="1024">
+          <button class="password-toggle" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false">Show</button>
+        </div>
+        <p id="login-error" class="form-error" role="alert" hidden></p>
+        <button class="button button-primary login-submit" id="login-submit" type="submit"><span>Sign in</span><span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="login-footnote">Private access for the portfolio owner.</p>
+      <noscript><p class="form-error">Enable JavaScript to sign in.</p></noscript>
+    </section>
+  </main>
+  <footer class="login-footer"><span>© <span id="year">2026</span> Sarika Maurya</span><a href="/">Back to portfolio <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "skill-mern",
+    "name": "MERN Stack",
+    "icon": "https://img.icons8.com/fluency/48/node-js.png"
+  },
+  {
+    "id": "skill-html5",
+    "name": "HTML5",
+    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+  },
+  {
+    "id": "skill-css",
+    "name": "CSS",
+    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+  },
+  {
+    "id": "skill-bootstrap",
+    "name": "Bootstrap",
+    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+  },
+  {
+    "id": "skill-javascript",
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+  },
+  {
+    "id": "skill-java",
+    "name": "Java",
+    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+  },
+  {
+    "id": "skill-python",
+    "name": "Python",
+    "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+  },
+  {
+    "id": "skill-sql",
+    "name": "SQL",
+    "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+  }
+]

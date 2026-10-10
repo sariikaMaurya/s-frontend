@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title">
+  <title id="title">School building demo icon</title>
+  <rect width="480" height="300" fill="#fff9fc"/>
+  <circle cx="240" cy="145" r="115" fill="#f0dce6"/>
+  <path d="M240 36v48" stroke="#54284f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M243 37h43l-10 13 10 13h-43z" fill="#e8c9d9"/>
+  <rect x="103" y="138" width="274" height="105" rx="8" fill="#b66a8b"/>
+  <path d="M88 140l43-35h218l43 35z" fill="#75446d"/>
+  <rect x="181" y="117" width="118" height="126" fill="#fff9fc"/>
+  <path d="M167 119l73-49 73 49z" fill="#75446d"/>
+  <circle cx="240" cy="112" r="17" fill="#fff9fc" stroke="#54284f" stroke-width="4"/>
+  <path d="M240 101v11l8 5" fill="none" stroke="#54284f" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#fff9fc" stroke="#75446d" stroke-width="4">
+    <path d="M122 159h32v27h-32zM122 201h32v27h-32zM326 159h32v27h-32zM326 201h32v27h-32z"/>
+  </g>
+  <rect x="200" y="145" width="80" height="24" rx="5" fill="#e8c9d9"/>
+  <text x="240" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#54284f">SCHOOL</text>
+  <path d="M220 243v-43a20 20 0 0 1 40 0v43" fill="#75446d"/>
+  <path d="M91 246h298" stroke="#54284f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M211 255h58M201 265h78" stroke="#d9b5c8" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,86 @@
+/* Header and footer use the portfolio's shared stylesheet. */
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.not-found-page main { flex: 1; }
+.not-found-page header .logo { flex-shrink: 0; gap: 0.7rem; }
+.not-found-page header .logo img { width: 3.2rem; max-width: none; }
+.not-found-page #menu { background: transparent; }
+.not-found-page a:focus-visible,
+.not-found-page button:focus-visible { outline: 2px solid teal; outline-offset: 5px; }
+.page_404 {
+  min-height: 66vh;
+  margin-top: 6.5rem;
+  padding: 6rem 2rem 7rem;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at 50% 36%, #e4f5f1, transparent 65%), #f7fbfa;
+  text-align: center;
+}
+.not-found-content { width: 100%; max-width: 65rem; }
+.not-found-content, .not-found-content * { text-transform: none; }
+.not-found-eyebrow {
+  color: #006d6d;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+.not-found-code {
+  color: teal;
+  font-size: clamp(10rem, 16vw, 17rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.8rem;
+  margin: 1.2rem 0 1rem;
+}
+.not-found-dot { color: #0e2431; }
+.page_404 h1 { color: #0e2431; font-size: clamp(2.8rem, 4vw, 4rem); line-height: 1.25; }
+.not-found-description {
+  color: #53666d;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  max-width: 49rem;
+  margin: 1.5rem auto 0;
+}
+.not-found-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.4rem; margin: 2.8rem 0 0; }
+.not-found-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid teal;
+  border-radius: 0.7rem;
+  padding: 1.5rem 2.4rem;
+  background: teal;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.not-found-button:hover { background: #006666; box-shadow: 0 5px 16px #00808025; }
+.not-found-button-secondary { background: transparent; color: #006d6d; }
+.not-found-button-secondary:hover { background: #e0f0ed; }
+.not-found-help { color: #53666d; font-size: 1.3rem; margin-top: 2.5rem; line-height: 1.8; }
+.not-found-help a { color: #006d6d; text-decoration: underline; text-underline-offset: 0.3rem; }
+.not-found-page .footer { padding: 0 9% 2rem; }
+@media (min-width: 769px) and (max-width: 1150px) {
+  .not-found-page header { padding-inline: 3%; }
+  .not-found-page header .navbar li { margin-left: 1.6rem; }
+  .not-found-page header .navbar ul li a { font-size: 1.4rem; }
+}
+@media (max-width: 768px) {
+  .not-found-page header .navbar ul li { width: 100%; }
+  .not-found-page header .navbar { height: calc(100vh - 6.5rem); overflow-y: auto; visibility: hidden; }
+  .not-found-page header .navbar.nav-toggle { visibility: visible; }
+  .page_404 { padding: 5rem 2.2rem; }
+  .not-found-page .footer { padding-inline: 2rem; }
+}
+@media (max-width: 400px) {
+  .not-found-actions { flex-direction: column; }
+  .not-found-page .footer .box-container .box { min-width: 0; }
+  .not-found-page .footer .box p { overflow-wrap: anywhere; }
+}

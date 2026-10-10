@@ -1,0 +1,112 @@
+/* Reuse the homepage colors, typography, cards, navigation and footer. */
+@import url("../assets/css/style.css");
+
+.work {
+  margin-top: 6.5rem;
+}
+
+.work .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .button-group .btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.work .button-group .btn:hover,
+.work .button-group .btn.is-checked {
+  background: #fff;
+  color: #000;
+}
+
+.work .button-group .btn:focus-visible {
+  outline: 2px solid #008080;
+  outline-offset: 3px;
+}
+
+/* Keep category filtering usable without a third-party layout library. */
+.work .box-container {
+  display: flex;
+  gap: 0;
+}
+
+.work .box-container .grid-item {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.work .box-container .grid-item .box {
+  width: 100%;
+}
+
+.work .backbtn {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.work .backbtn .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.3rem 2.6rem;
+  border: 1px solid var(--color-mauve);
+  border-radius: 0.8rem;
+  background: var(--color-mauve);
+  color: var(--color-cream);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px #24132133;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.work .backbtn .btn:hover {
+  background: var(--color-cream);
+  color: var(--color-plum);
+  transform: translateY(-2px);
+}
+
+.work .backbtn .btn:focus-visible {
+  outline: 2px solid var(--color-cream);
+  outline-offset: 4px;
+}
+
+.work .backbtn .btn i {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.work .backbtn .btn:hover i {
+  transform: translateX(-5px);
+}
+
+@media (min-width: 600px) {
+  .work .box-container .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .work .box-container .grid-item {
+    width: 33.333333%;
+  }
+}
+
+@media (max-width: 450px) {
+  .work .box-container {
+    margin: 2rem 0;
+  }
+}

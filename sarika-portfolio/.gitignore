@@ -1,0 +1,11 @@
+node_modules/
+.admin/
+contacts.json
+contacts.json.tmp
+projects.json.tmp
+skills.json.tmp
+experience.json.tmp
+.env
+.env.*
+!.env.example
+test-results/

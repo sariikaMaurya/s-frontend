@@ -1,0 +1,82 @@
+/* Shared appearance control. Light is the default, independent of OS settings. */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+  flex-shrink: 0; min-height: 4rem; padding: .6rem 1rem; margin-left: 1.5rem;
+  border: 1px solid #d7ded2; border-radius: 2rem; background: #eef2eb;
+  color: #164b42; font: 600 1.2rem 'Poppins', sans-serif; cursor: pointer;
+}
+.theme-toggle-icon { font-size: 2rem; line-height: 1; }
+.theme-toggle:hover { background: #dfe8d6; }
+.theme-toggle:focus-visible { outline: 3px solid #28796c; outline-offset: 4px; }
+@media (max-width: 768px) {
+  header .logo { margin-right: auto; }
+  header #menu { order: 3; margin-left: 1.5rem; }
+  .theme-toggle { order: 2; }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  .theme-toggle-label { display: none; }
+  .theme-toggle { width: 4rem; padding: 0; margin-left: .8rem; }
+}
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="dark"] body {
+  --color-mauve: #79c8b5; --color-plum: #9adac9; --color-cream: #16241f;
+  --color-charcoal: #e7eee8; --color-soft-mauve: #1c2d26; --color-pale-mauve: #14221d;
+  background: #101c17; color: #e7eee8;
+}
+html[data-theme="dark"] header { background: #101c17ed; border-color: #34473b; }
+html[data-theme="dark"] header .logo,
+html[data-theme="dark"] .heading,
+html[data-theme="dark"] .home .content h2,
+html[data-theme="dark"] .about .row .content h3,
+html[data-theme="dark"] .portrait-caption strong { color: #e7eee8; }
+html[data-theme="dark"] header .navbar ul li a,
+html[data-theme="dark"] .home .content > p,
+html[data-theme="dark"] .hero-description,
+html[data-theme="dark"] .about .row .content p,
+html[data-theme="dark"] .education .qoute,
+html[data-theme="dark"] .work .desc p,
+html[data-theme="dark"] .experience .content .desc p,
+html[data-theme="dark"] .content-status,
+html[data-theme="dark"] .portfolio-empty-card p,
+html[data-theme="dark"] :is(.certificates-intro, .certificate-date, .certificate-description, .certificate-id, .not-found-description, .not-found-help) { color: #b5c4b9; }
+html[data-theme="dark"] :is(.brand-surname, .hero-eyebrow, .home .content h2 span, .home .content > p span, .heading span, .heading > i, .caption-symbol, .education h4, .portfolio-empty-eyebrow, .portfolio-empty-icon),
+html[data-theme="dark"] .work .heading,
+html[data-theme="dark"] .portfolio-empty-card h3,
+html[data-theme="dark"] header .navbar ul li a:is(.active, :hover) { color: #79c8b5; }
+html[data-theme="dark"] .home { background: radial-gradient(ellipse at 90% 35%, #254336 0, transparent 45%), #101c17; }
+html[data-theme="dark"] :is(.about, .experience, .certificates, .page_404) { background: #101c17; }
+html[data-theme="dark"] :is(.education, .contact, .work) { background: #1c2d26; }
+html[data-theme="dark"] :is(.contact .container, .education .box-container .box, .experience .content, .certificate-card, .portrait-caption, .work .box-container .box) { background: #16241f; color: #e7eee8; border-color: #34473b; }
+html[data-theme="dark"] .work .box-container .box .content { background: #16241ff5; }
+html[data-theme="dark"] :is(.skills, .footer) { background: #123e34; }
+html[data-theme="dark"] .skills :is(.heading, .heading span, .heading i, .content-status, .portfolio-empty-card h3) { color: #f3f6eb; }
+html[data-theme="dark"] .portfolio-empty-card { background: radial-gradient(ellipse at 50% 0%, #254336, transparent 65%), #16241f; border-color: #496653; }
+html[data-theme="dark"] .portfolio-empty-icon { background: #254336; border-color: #496653; }
+html[data-theme="dark"] .portrait-orbit,
+html[data-theme="dark"] .portrait-orbit::before,
+html[data-theme="dark"] .about .row .content .box-container { border-color: #496653; }
+html[data-theme="dark"] .about .row .image img { box-shadow: 15px 15px 0 #1c2d26; }
+html[data-theme="dark"] .home .image img { background: #254336; }
+html[data-theme="dark"] .social-icons a { color: #9adac9; border-color: #496653; }
+html[data-theme="dark"] .social-icons a:hover { background: #28796c; color: white; }
+html[data-theme="dark"] :is(.contact form input, .contact form textarea, .chat-name-row input, .chat-input-row textarea) { background: #101c17; color: #e7eee8; border-color: #496653; }
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder { color: #a5b6aa; }
+html[data-theme="dark"] .contact form :is(.field i, .message i) { color: #79c8b5; }
+html[data-theme="dark"] :is(.home .btn, .resumebtn .btn, .morebtn .btn, .work .btn, .button-area button, .certificate-link, .work .box-container .box .content .tag, #chat-bubble, .chat-header, .chat-send-btn, .chat-msg.from-visitor) { background: #235f50; color: #fff; border-color: #79c8b5; }
+html[data-theme="dark"] .certificate-preview { background: #1c2d26; border-color: #34473b; }
+html[data-theme="dark"] #chat-panel { background: #16241f; color: #e7eee8; }
+html[data-theme="dark"] :is(.chat-messages, .chat-name-row, .chat-input-row) { background: #16241f; border-color: #34473b; }
+html[data-theme="dark"] .chat-msg.from-admin { background: #254336; color: #e7eee8; }
+html[data-theme="dark"] .education .box-container .box .content p,
+html[data-theme="dark"] .experience .content :is(h2, h3, h4),
+html[data-theme="dark"] .contact form .button-area span { color: #e7eee8; }
+html[data-theme="dark"] .chat-system-msg { color: #b5c4b9; }
+html[data-theme="dark"] .skills .portfolio-empty-card { background: #ffffff0b; border-color: #ffffff40; }
+html[data-theme="dark"] :is(.home .btn, .resumebtn .btn, .morebtn .btn, .work .btn, .button-area button, .certificate-link):hover { background: #28796c; color: #fff; }
+html[data-theme="dark"] .theme-toggle { background: #1c2d26; border-color: #496653; color: #9adac9; }
+html[data-theme="dark"] .theme-toggle:hover { background: #254336; }
+@media (max-width: 768px) {
+  html[data-theme="dark"] header .navbar { background: #101c17; border-color: #34473b; }
+  html[data-theme="dark"] header .navbar ul li a:is(.active, :hover) { background: #1c2d26; }
+}

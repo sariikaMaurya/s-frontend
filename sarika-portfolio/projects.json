@@ -1,0 +1,24 @@
+[
+  {
+    "id": "project-farmer-merchant-2026",
+    "name": "Farmer-Merchant Integration (2026)",
+    "desc": "A MERN Stack platform connecting farmers directly with merchants. It reduces middlemen, helps farmers get better prices, and enables merchants to source fresh produce efficiently.",
+    "image": "",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/sariikaMaurya"
+    }
+  },
+  {
+    "id": "project-virtual-atm-2025",
+    "name": "Virtual ATM Machine (2025)",
+    "desc": "A Python console application with secure login and core banking operations: withdrawal, deposit, and balance checks. Functions and conditional logic validate transactions.",
+    "image": "",
+    "category": "basicweb",
+    "links": {
+      "view": "",
+      "code": "https://github.com/sariikaMaurya"
+    }
+  }
+]
