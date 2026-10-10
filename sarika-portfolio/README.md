@@ -47,7 +47,10 @@ for both `npm start` and `npm run dev`; production can provide them as environme
 variables instead. For MongoDB Atlas, use the `mongodb+srv://` connection string
 from Atlas, ensure the database user has read/write access, and allow your server's
 IP address in Atlas Network Access. URL-encode special characters in the database
-username or password. On first startup, existing `projects.json`,
+username or password. If your network's DNS resolver refuses Atlas SRV lookups,
+set `MONGODB_DNS_SERVERS` to a comma-separated list of reachable DNS servers
+(for example, `1.1.1.1,1.0.0.1`); this changes DNS resolution only for the server
+process. On first startup, existing `projects.json`,
 `skills.json`, `experience.json`, `certificates.json`, and `contacts.json` records
 are imported once; subsequent reads and writes use MongoDB. The homepage, Projects
 page, and Experience page continue to load the same public JSON endpoints. Education

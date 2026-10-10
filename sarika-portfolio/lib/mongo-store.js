@@ -1,6 +1,7 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const dns = require('node:dns');
 const { collections, validateContent } = require('./content-store');
 
 async function readLegacyList(dataDir, name) {
@@ -26,6 +27,11 @@ async function createMongoStore({ dataDir, env }) {
     const uri = env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
     const databaseName = (env.MONGODB_DB || 'portfolio').trim();
     if (!databaseName) throw new Error('MONGODB_DB must not be empty.');
+    if (env.MONGODB_DNS_SERVERS) {
+        const dnsServers = env.MONGODB_DNS_SERVERS.split(',').map(server => server.trim()).filter(Boolean);
+        if (!dnsServers.length) throw new Error('MONGODB_DNS_SERVERS must contain at least one DNS server.');
+        dns.setServers(dnsServers);
+    }
 
     const client = new MongoClient(uri, { serverSelectionTimeoutMS: 5000 });
     try {
